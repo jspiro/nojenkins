@@ -1,43 +1,21 @@
-# No Code Style Guide
+# No Jenkins Style Guide
 
-All no code programs are the same, regardless of use case, any code you write is a liability.
+No Jenkins programs use whatever niche shell you run on your machine,
+e.g. `fish` or [kitty](https://sw.kovidgoyal.net/kitty/).
 
-## File Extensions
-
-No code is not stored in files, but if you must, use the `.no` file extension.
-
-```
-main.no
-```
+We only ask that you not be a monster and wrap your lines at 80 characters.
 
 ## Linters
 
-There is only one way to write no code and the `du` command can help you identify any issues. 
+If it worked when you tried it, there's not much else to do.
 
-```
-du -h main.no
-```
+That said, always validate your crontab, _no one_ gets them right,
+even on the tenth try.
 
-```
-0       main.no
-```
+The No Jenkins community likes [crontab.guru](https://crontab.guru)
+Note: They are not a paid sponsor, but we did receive the product free.
 
-> The only valid code is no code.
+## Logging
 
-## Code Reviews
-
-The no code community has adopted the following conventions when reviewing code changes:
-
-When the change contains no code additions or modifications:
-
-```
-LGTM # Looks Good To Me
-```
-
-When the change includes code additions or modifications:
-
-```
-CIAL # Code Is A Liability
-```
-
-> Change requests that fall into this category should be rejected immediately.
+Append `&> /dev/null` to all commands and you're good. This will save you
+loads of cash on disk space and monitoring.

@@ -1,53 +1,49 @@
-# No Code
+# No Jenkins
 
-No code is the best way to write secure and reliable applications. Write nothing; deploy nowhere.
+No Jenkins is the best way to avoid using Jenkins and Groovy to do arbitrary
+things on a schedule.
+
+No Jenkins leverages and extends the
+[nocode](https://github.com/kelseyhightower/nocode) framework.
 
 ## Getting Started
 
-Start by not writing any code.
+Whenever you think "I could do this with Jenkins," reconsider and use
+No Jenkins instead.
 
-```
+Begin by copying the shell script you already made from your POC
+into No Jenkins. Run it through `shellcheck`, and then call it from the Crontab.
 
-```
+You're done, and you did it without Jenkins!
 
-This is just an example application, but imagine it doing anything you want. Adding new features is easy too:
+## Deploying
 
-```
+You know how people always say "well it works from my machine," usually in
+contrast with difficulties trying to deploy "it" to Kubernetes or EC2?
 
-```
+You may be surprised to learn that No Jenkins runs _great_ from your machine,
+especially in a production environment.
 
-The possibilities are endless.
+There are two supported configurations:
 
-### Building the Application
+### In the cloud (preferred)
 
-Now that you have not done anything it's time to build your application:
+1. Literally ship your machine to a colo and make it someone else's problem.
 
-```
+Be sure to save some of your budget for Remote Hands.
 
-```
 
-Yep. That's it. You should see the following output:
+### On-prem
 
-```
+1. Install `ngrok` and manually configure your DNS to point to it.
+2. Move your machine to the Harry Potter room under your stairs.
 
-```
+You'll want to pay for `ngrok` if you're lazy so the endpoint doesn't change.
 
-### Deploying
-
-While you still have not done anything it's time to deploy your application. By running the following command you can deploy your application absolutely nowhere.
-
-```
-
-```
-
-It's that simple. And when it comes time to scale the application, all you have to do is:
-
-```
-
-```
-
-I know right?
+Otherwise, use No Jenkins to periodically restart `ngrok` and update the DNS.
+Be sure your DNS provider credentials are embedded directly in the shell script,
+since cron jobs start with nearly empty environments.
 
 ## Contributing
 
-You don't.
+Nah, I think we're good.

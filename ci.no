@@ -1,0 +1,4 @@
+#/bin/sh
+
+# Simulate the result of running a typical Jenkins pipeline.
+exit 1
