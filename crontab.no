@@ -1,0 +1,1 @@
+* * * * * /bin/sh /home/nojenkins/ci.no &> /dev/null
