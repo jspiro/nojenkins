@@ -1,9 +1,9 @@
 # No Jenkins Style Guide
 
 No Jenkins programs use whatever niche shell you run on your machine,
-e.g. `fish` or [kitty](https://sw.kovidgoyal.net/kitty/).
+e.g. [fish](https://fishshell.com/) or [kitty](https://sw.kovidgoyal.net/kitty/).
 
-We only ask that you not be a monster and wrap your lines at 80 characters.
+We only ask you to not be a monster and wrap your lines at 80 characters.
 
 ## Linters
 

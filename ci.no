@@ -1,4 +1,5 @@
 #/bin/sh
 
-# Simulate the result of running a typical Jenkins pipeline.
+# Simulate the results of running a typical Jenkins pipeline.
+sleep 9000
 exit 1
